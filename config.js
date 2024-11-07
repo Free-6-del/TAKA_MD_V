@@ -26,7 +26,7 @@ global.gdbye = process.env.GOODBYE || "false";
 global.wlcm = process.env.WELCOME || "false";
 global.warncount = process.env.WARN_COUNT || 3;
 global.disablepm = process.env.DISABLE_PM || "false";
-global.disablegroup = process.env.DISABLE_GROUPS || "false",
+global.disablegroup = process.env.DISABLE_GROUPS || "true",
 global.MsgsInLog = process.env.MSGS_IN_LOG || "false";
 global.userImages = process.env.USER_IMAGES || "https://i.imgur.com/vci8Frt.jpeg,https://i.imgur.com/oG6RiCF.jpeg,https://i.imgur.com/uZLV84s.jpeg";
 global.waPresence = process.env.WAPRESENCE || "available";
@@ -41,19 +41,19 @@ global.read_status_from = process.env.READ_STATUS_FROM || "";
 global.api_smd = "https://api-smd-1.vercel.app";
 global.scan = "https://kata-session.onrender.com";
 
-global.SESSION_ID =
+global.SESSION_ID =eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiU0ZIcmdxMFRNNjRvd0V1Z0FOL0YxN2lKNVZ0bGt6cCtNSFhGdGpSQVdFcz0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiMFdmOHJVM00vM1lJeTFHMlZLYUd4VEo1cVV5QnY0UjREaGRENzZqRURnVT0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJjSHIvTGJhVGhkbTMzSFo0Q1F1WWJyM1pPU0wzVDl4WVhxejY2RllwakYwPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJrQU9uMjFVa3ZKbytZL2U0eGQ5ZEVISndwTEltRjVRQUc0dkE5d3F0SEdJPSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IjBLNEtqblJUMWVZNExqOHJrS1FmcENoQ0g4cVhzOUJrUkg1cm9SSEw5VTQ9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6Iit5SWhBbytBV0xCSVpmTjJrNE8xZGtZTmZjelBjamxHeHMxN1JkQ3hVbFU9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiS0lCeUx6UWtwWXovTW9IKzNNOVYvdzVLbzMzZFdIT01TaWVzdStYQXNHUT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiYzlZS3NFeHovZlpjTGZLNnlKa1Z4RUQrUWNBV0wvenZNQzgwWEs0UlBoZz0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6Ilh6WjNBTE5EVUhmQkt3SFFobGdHaHU4UTlNUEpJSE9RZ04rODIrWUYvV3poakRMZk5CYVFGeU4wdjhnZlNCbGxGK0ozMEJMS25hMmZpdExzSktadkNBPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6OTMsImFkdlNlY3JldEtleSI6IklYYkdoTEJwbUVTc0hDYkY1dHRGT2dRSG5sSlVjK2pyRDN3VnoyejkwUFk9IiwicHJvY2Vzc2VkSGlzdG9yeU1lc3NhZ2VzIjpbeyJrZXkiOnsicmVtb3RlSmlkIjoiNTA5Mzk5NTA4NjNAcy53aGF0c2FwcC5uZXQiLCJmcm9tTWUiOnRydWUsImlkIjoiRTc1M0ZGNjA0RTVFRjZDMTJENjZENTIxNUZGRUQwQzEifSwibWVzc2FnZVRpbWVzdGFtcCI6MTczMDk0NzY4Nn1dLCJuZXh0UHJlS2V5SWQiOjMxLCJmaXJzdFVudXBsb2FkZWRQcmVLZXlJZCI6MzEsImFjY291bnRTeW5jQ291bnRlciI6MCwiYWNjb3VudFNldHRpbmdzIjp7InVuYXJjaGl2ZUNoYXRzIjpmYWxzZX0sImRldmljZUlkIjoiMmJpaWZNdEdSa2lJazh0a2ZjcGVMUSIsInBob25lSWQiOiIyYWRjOTQwNy05ZDg1LTQ0MTItOWY0Mi0wN2NkM2IxYWVhYzMiLCJpZGVudGl0eUlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoienEyMS9yN3RBenlPYVJISXJNWHJUUUJtdkNvPSJ9LCJyZWdpc3RlcmVkIjp0cnVlLCJiYWNrdXBUb2tlbiI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IjNEbzdydGtCcUFrMCsraHJyMUVhS2oyZUlBST0ifSwicmVnaXN0cmF0aW9uIjp7fSwicGFpcmluZ0NvZGUiOiJWUEY0Q0Q5WiIsIm1lIjp7ImlkIjoiNTA5Mzk5NTA4NjM6NkBzLndoYXRzYXBwLm5ldCJ9LCJhY2NvdW50Ijp7ImRldGFpbHMiOiJDT2pOc3FFSEVOVFVzTGtHR0FFZ0FDZ0EiLCJhY2NvdW50U2lnbmF0dXJlS2V5IjoidSsvOHdSbnZyTVVMWnViMjQ3YmJ6K3hkcGt5R2Q4UUxYNEhKbnNKZDVYND0iLCJhY2NvdW50U2lnbmF0dXJlIjoiQnk5R1ZNNVB2TUg3T0hVT2ZrWGxTbXpXRUdTNkZiU0lkcjVqQWliQlBnVEYxdCt0OGp4Z2FDZjZGazE1bGRncE02eGZ4eFdxTDVLQnkxRmN6cXQ1Q1E9PSIsImRldmljZVNpZ25hdHVyZSI6IlRLOGd0dDVVK0Ewa1lLOHQ2QTB6VGFLQm1MQy8xV1NNUUpIdHVvSFBqZDNCaGtXT0RJM2E1N1BidGpMSnJHUzduOTkzTld0MUVTVFJnK0tYa1Qwd0RRPT0ifSwic2lnbmFsSWRlbnRpdGllcyI6W3siaWRlbnRpZmllciI6eyJuYW1lIjoiNTA5Mzk5NTA4NjM6NkBzLndoYXRzYXBwLm5ldCIsImRldmljZUlkIjowfSwiaWRlbnRpZmllcktleSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkJidnYvTUVaNzZ6RkMyYm05dU8yMjgvc1hhWk1obmZFQzErQnlaN0NYZVYrIn19XSwicGxhdGZvcm0iOiJhbmRyb2lkIiwibGFzdEFjY291bnRTeW5jVGltZXN0YW1wIjoxNzMwOTQ3NjgxfQ==
   process.env.SESSION_ID ||
   "PUT YOUR SESSION HERE"
 module.exports = {
   menu: process.env.MENU || "1",
-  HANDLERS: process.env.PREFIX || ".",
+  HANDLERS: process.env.PREFIX || "*",
   BRANCH: process.env.BRANCH || "main",
   VERSION: process.env.VERSION || "1.0.0",
   caption: process.env.CAPTION || "`BRAND PRODUCT OF ☞⌜TAKA_TECH⌝☜`",
-  author: process.env.PACK_AUTHER || "꧁•༆$ℭ𝔥𝔯𝔦𝔰_𝔇𝔦𝔬𝔯🚹࿇꧂",
+  author: process.env.PACK_AUTHER || "John Rood ",
   packname: process.env.PACK_NAME || "TAKA MD",
-  botname: process.env.BOT_NAME || "ᵏᵍ┘TAKA_𝙼𝙳_𝚅𖤐",
-  ownername: process.env.OWNER_NAME || "☞⌜TAKA_TECH☜",
+  botname: process.env.BOT_NAME || "John Rood",
+  ownername: process.env.OWNER_NAME || "john Rood",
   errorChat: process.env.ERROR_CHAT || "",
   KOYEB_API: process.env.KOYEB_API || "false",
   REMOVE_BG_KEY: process.env.REMOVE_BG_KEY || "tCxobE1FqJgfbDZgsYQNHBFB",
@@ -64,7 +64,7 @@ module.exports = {
   HEROKU: process.env.HEROKU_APP_NAME && process.env.HEROKU_API_KEY,
   aitts_Voice_Id: process.env.AITTS_ID || "37",
   ELEVENLAB_API_KEY: process.env.ELEVENLAB_API_KEY || "...d336",
-  WORKTYPE: process.env.WORKTYPE || process.env.MODE || "public",
+  WORKTYPE: process.env.WORKTYPE || process.env.MODE || "private",
   LANG: (process.env.THEME || "TAKA").toUpperCase(),
 };
 global.rank = "updated";
